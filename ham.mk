@@ -27,6 +27,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom-common.rc \
+    init.safailnet.rc \
     ueventd.qcom.rc \
     fstab.qcom \
     init.qcom.rc \
