@@ -197,13 +197,8 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 #BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-ifeq ($(HOST_OS),linux)
-  ifeq ($(call match-word-in-list,$(TARGET_BUILD_VARIANT),user),true)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
+# Dexpreopt
+WITH_DEXPREOPT := true
 
 # SELinux policies
 # qcom sepolicy
